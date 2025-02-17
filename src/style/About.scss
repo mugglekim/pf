@@ -1,0 +1,120 @@
+.about-wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, $sub-color 0%, $text-white 100%);
+  .about-basic, .about-plus{
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include responsive($breakpoint-large){
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include responsive($breakpoint-small){
+      width: 100%;
+      flex-direction: column;
+      div{
+        width: 80%;
+      }
+    }
+  }
+  .about-basic{
+    margin-top: 6rem;
+    gap: 4rem;
+    @include responsive($breakpoint-medium){
+      gap: 2rem;
+    }
+    img{
+      width: 260px; height: 260px;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+    .about-txt{
+      width: 400px;
+      h2{
+        font-size: $font-size-medium;
+        margin-bottom: 1.6rem;
+        span{
+          color: $primary-color;
+        }
+      }
+      p{
+        font-size: $font-size-small;
+      }
+    }
+  }
+  .about-plus{
+    gap: 2rem;
+    margin-top: 4rem;
+    @include responsive($breakpoint-medium){
+      width: 100%;
+      flex-direction: column;
+      div{
+        width: 80%;
+        margin-top: 0;
+      }
+    }
+    div{
+      background-color: $text-white;
+      padding: 4rem;
+      box-sizing: border-box;
+      flex: 1;
+      h3{
+        font-size: $font-size-medium;
+        span{
+          color: $primary-color;
+        }
+      }
+    }
+    .skills{
+      ul{
+        margin-top: 2rem;
+        h4{
+          font-size: 1.2rem;
+        }
+        li{
+          list-style: disc;
+          margin: 0.5rem 0 0.5rem 1.6rem;
+        }
+      }
+      div.skills-icon{
+        padding: 0;
+        margin-top: 1rem;
+        img{
+          width: 3rem; height: 3rem;
+          object-fit: contain;
+          margin-left: 0.6rem;
+        }
+      }
+    }
+    .experience{
+      .experience-wrap{
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3,3fr);
+      }
+    }
+  }
+  .about-more-btn{
+    width: 120px; height: 40px;
+    line-height: 1;
+    padding: 0.6rem 1rem;
+    margin: 2rem 0 6rem;
+    border: none;
+    cursor: pointer;
+    background-color: $text-black;
+    color: $text-white;
+    border-radius: 2rem;
+    &:hover{
+      background-color: $primary-color;
+    }
+    span{
+      margin-left: 0.4rem;
+    }
+  }
+}

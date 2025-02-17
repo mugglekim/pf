@@ -1,11 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Intro from './Intro';
+import About from './About';
+import Works from './Works';
+import Contact from './Contact';
+import { LuAlignJustify, LuX } from "react-icons/lu";
 
 const Main = () => {
   const [activeIdx, setActiveIdx]=useState(0);
+  const [mMenu, setMMenu]=useState(false);
   const sections=['SEONMI KIM','About','Works','Contact'];
   // const sectionRef=sections.map(()=>{return useRef(null)});
   const sectionRef=[useRef(null),useRef(null),useRef(null),useRef(null)];
   const sectionPst=useRef([]);
+  const clickMenu=()=>{
+    setMMenu(!mMenu);
+  }
   const handleMenu=(idx)=>{
     // sectionRef[idx].current.scrollIntoView({behavior:"smooth"});
     setActiveIdx(idx);
@@ -22,7 +31,7 @@ const Main = () => {
         pos.push(ref.current.offsetTop);
       }
       sectionPst.current=pos;
-      console.log(sectionPst.current);
+      // console.log(sectionPst.current);
   }
   useEffect(()=>{
     //제일 먼저 실행되는 구문은 useEffect
@@ -47,7 +56,27 @@ const Main = () => {
   return (
     <div className='main'>
       <header>
-        <nav>
+        <div className='m-gnb'>
+          <a href='#'>SEONMI</a>
+          <span className='menu-btn' onClick={clickMenu}>{mMenu ? <LuX /> : <LuAlignJustify />}</span>
+        </div>
+        {
+          mMenu && <nav className='m-menu'>
+                      {
+                        sections.map((txt,idx)=>{
+                          return <a href='#' key={idx}
+                                    onClick={(e)=>{
+                                      e.preventDefault();
+                                      handleMenu(idx);
+                                      setMMenu(!mMenu);
+                                    }}
+                                    className={activeIdx===idx? "active":""}
+                                    >{txt}</a>
+                        })
+                      }
+                  </nav>
+        }
+        <nav className='pc-menu'>
           {
             sections.map((txt,idx)=>{
               return <a href='#' key={idx}
@@ -61,10 +90,18 @@ const Main = () => {
           }
         </nav>
       </header>
-      <section ref={sectionRef[0]}></section>
-      <section ref={sectionRef[1]}></section>
-      <section ref={sectionRef[2]}></section>
-      <section ref={sectionRef[3]}></section>
+      <section ref={sectionRef[0]}>
+        <Intro/>
+      </section>
+      <section ref={sectionRef[1]}>
+        <About/>
+      </section>
+      <section ref={sectionRef[2]}>
+        <Works/>
+      </section>
+      <section ref={sectionRef[3]}>
+        <Contact/>
+      </section>
     </div>
   );
 };

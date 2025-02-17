@@ -1,0 +1,27 @@
+.intro-wrap{
+  color: $text-white;
+  text-align: center;
+  width: 100%;
+  h1{
+    font-size: $font-size-large;
+    @include responsive($breakpoint-small){
+      display: none;
+    }
+  }
+  .m-title{
+    display: none;
+    @include responsive($breakpoint-small){
+      display: block;
+      line-height:1;
+    }
+  }
+  p{
+    font-size: $font-size-small;
+    @include responsive($breakpoint-small){
+      margin-top: 2rem;
+    }
+  }
+  @include responsive($breakpoint-small){
+    padding: 0 2rem;
+  }
+}

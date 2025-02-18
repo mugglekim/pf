@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div>
+    <div className='contact-wrap'>
       <ul>
         <li><span>E - M A I L</span>shalomseonmi@gmail.com</li>
         <li><span>T E L</span>+82 10 3354 6632</li>

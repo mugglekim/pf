@@ -2,26 +2,36 @@
   color: $text-white;
   text-align: center;
   width: 100%;
-  h1{
-    font-size: $font-size-large;
-    @include responsive($breakpoint-small){
+  background-image: url(../../public/images/sec-1-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 760px;
+  position: relative;
+  .intro-txt{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    h1{
+      font-size: $font-size-large;
+      @include responsive($breakpoint-small){
+        display: none;
+      }
+    }
+    .m-title{
       display: none;
+      @include responsive($breakpoint-small){
+        display: block;
+        line-height:1;
+      }
     }
-  }
-  .m-title{
-    display: none;
+    p{
+      font-size: $font-size-small;
+      @include responsive($breakpoint-small){
+        margin-top: 2rem;
+      }
+    }
     @include responsive($breakpoint-small){
-      display: block;
-      line-height:1;
+      padding: 0 2rem;
     }
-  }
-  p{
-    font-size: $font-size-small;
-    @include responsive($breakpoint-small){
-      margin-top: 2rem;
-    }
-  }
-  @include responsive($breakpoint-small){
-    padding: 0 2rem;
   }
 }

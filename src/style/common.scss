@@ -1,6 +1,6 @@
 //color
-$primary-color: #1bb0d9;
-$sub-color: rgba($color: #1bb0d9, $alpha: 0.7);
+$primary-color: #1b67d9;
+$sub-color: rgba($color: $primary-color, $alpha: 0.5);
 
 $text-black:#000;
 $text-gray:#888;
@@ -15,4 +15,4 @@ $font-size-small: 16px;
 //responsive
 $breakpoint-large: 1200px;
 $breakpoint-medium: 900px;
-$breakpoint-small: 600px;
+$breakpoint-small: 700px;

@@ -9,41 +9,34 @@ const Main = () => {
   const [activeIdx, setActiveIdx]=useState(0);
   const [mMenu, setMMenu]=useState(false);
   const sections=['SEONMI KIM','About','Works','Contact'];
-  // const sectionRef=sections.map(()=>{return useRef(null)});
   const sectionRef=[useRef(null),useRef(null),useRef(null),useRef(null)];
-  const sectionPst=useRef([]);
   const clickMenu=()=>{
     setMMenu(!mMenu);
   }
   const handleMenu=(idx)=>{
-    // sectionRef[idx].current.scrollIntoView({behavior:"smooth"});
     setActiveIdx(idx);
     //해당 섹션으로 이동
     window.scrollTo({
-      top: sectionPst.current[idx],
+      top: sectionRef[idx].current.offsetTop,
       behavior: "smooth"
     });
   }
-  const sectionPos=()=>{
-    const pos=[];
-      for(let i=0; i<sectionRef.length; i++){
-        const ref=sectionRef[i];
-        pos.push(ref.current.offsetTop);
-      }
-      sectionPst.current=pos;
-      // console.log(sectionPst.current);
-  }
+
   useEffect(()=>{
     //제일 먼저 실행되는 구문은 useEffect
     window.scrollTo({top:0});//새로고침하면 top:0으로 돌아가기
-    sectionPos();//실행되었을 때, 각 섹션의 top값 읽어오기
     const handleScroll=()=>{
+      const {scrollTop, clientHeight, scrollHeight}=document.documentElement;
       sectionRef.forEach((ref,idx)=>{
         const rect=ref.current.getBoundingClientRect();
-        const yPos=document.documentElement.clientHeight*0.5;
+        const yPos=clientHeight*0.5;
         if(rect.top>=0 && rect.top<yPos){
           setActiveIdx(idx);
         }
+        if(scrollTop===scrollHeight-clientHeight){
+          setActiveIdx(sectionRef.length-1);
+        }
+        console.log(scrollTop, scrollHeight-clientHeight);
       });
     }
     window.addEventListener('scroll',handleScroll);

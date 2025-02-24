@@ -16,11 +16,25 @@ const portfolioData = [
     link: 'https://mugglekim.github.io/camping/index.html'
   },
   {
+    class: 'publishing',
+    title: '넷플릭스 클론 코딩',
+    sub_title:'Figma로 레이아웃 설계 후 React로 작업',
+    listImg: '/images/publishing/nexflix.jpg',
+    dec: 'Figma로 전체 레이아웃 설계한 후 React로 작업한 넷플릭스 클론 사이트입니다. PC/Tablet/Mobile 3가지 사이즈의 반응형 사이트로, ‘지금 뜨는 콘텐츠’ 영역은 TMDB API를 연동 및 react slick을 사용해 보았습니다. 우측 상단에 로그인 버튼을 클릭하면 로그인 페이지로 이동되며, 로그인 및 비밀번호 입력시 &버튼 클릭시 인터랙션 및 alert 메세지 출력 작업까지 진행했습니다.',
+    dec_list:[
+      'Figma로 전체 구조 설계한 후 코드 구현',
+      '제작에 사용된 스킬 : Figma, react, react-router, TMdb API 연동',
+      '플러그인 : Axios, react-slick, scss'
+    ],
+    link: 'https://mugglekim.github.io/netflix_clone/'
+  },
+  {
     class: 'design',
-    title: '베드진 매트리스 상세페이지',
-    sub_title:'상세페이지 전체 리뉴얼 작업',
+    title: '베드진 매트리스 상세',
+    sub_title:'가구/인테리어 상세페이지 제작 - 전체 리뉴얼',
     listImg: '/images/bedjean/bedjean_sum.jpg',
     dec_list:[
+      '업체 요청으로 상세페이지 전체 리뉴얼 작업 진행',
       '기존 상세는 특별한 기승전결 없이 이미지가 크게 삽입되어 있었고, 제품 정보는 대화체로 길게 서술되어 있었음',
       '이미지도 설명을 돕는 요소로 사용하면서, 장황한 대화체 설명을 간결하게 수정',
       'gif를 삽입하여 매트리스 강도에 대해 쉽게 이해할 수 있도록 함'
@@ -45,24 +59,12 @@ const portfolioData = [
     ]
   },
   {
-    class: 'publishing',
-    title: '넷플릭스 클론 코딩',
-    sub_title:'Figma로 레이아웃 설계 후 React로 작업',
-    listImg: '/images/publishing/nexflix.jpg',
-    dec: 'Figma로 전체 레이아웃 설계한 후 React로 작업한 넷플릭스 클론 사이트입니다. PC/Tablet/Mobile 3가지 사이즈의 반응형 사이트로, ‘지금 뜨는 콘텐츠’ 영역은 TMDB API를 연동 및 react slick을 사용해 보았습니다. 우측 상단에 로그인 버튼을 클릭하면 로그인 페이지로 이동되며, 로그인 및 비밀번호 입력시 &버튼 클릭시 인터랙션 및 alert 메세지 출력 작업까지 진행했습니다.',
-    dec_list:[
-      'Figma로 전체 구조 설계한 후 코드 구현',
-      '제작에 사용된 스킬 : Figma, react, react-router, TMdb API 연동',
-      '플러그인 : Axios, react-slick, scss'
-    ],
-    link: 'https://mugglekim.github.io/netflix_clone/'
-  },
-  {
     class: 'design',
-    title: '오가닉 토퍼 상세페이지',
-    sub_title:'상세페이지 전체 리뉴얼 작업',
+    title: '오가닉 메모리폼 토퍼 상세',
+    sub_title:'가구/인테리어 상세페이지 제작 - 전체 리뉴얼',
     listImg: '/images/topper/topper_sum.jpg',
     dec_list:[
+      '업체 요청으로 상세페이지 전체 리뉴얼 작업 진행',
       '기존 상세는 폰트사이즈가 작아 가독성이 떨어졌음',
       '제작된지 오래되어 전체적인 디자인이 다소 칙칙하고 올드한 느낌을 주었음',
       '전체 색상을 화사하게 하게 변경',
@@ -81,6 +83,176 @@ const portfolioData = [
       '/images/topper/topper_08.jpg',
       '/images/topper/topper_09.jpg',
       '/images/topper/topper_10.jpg',
+    ]
+  },
+  {
+    class: 'design',
+    title: '마리포사 테이블매트 상세',
+    sub_title:'생활용품 상세페이지 제작 - 아이폰으로 직접 촬영',
+    listImg: '/images/mat/mat_sum.jpg',
+    dec_list:[
+      '제품 사진이 없어 아이폰으로 직접 촬영한 사진으로 제작',
+      '제품의 실제 컬러와 질감이 잘 드러나도록 촬영 및 보정함',
+      '제품의 장점을 아이콘과 함께 심플하게 설명',
+      '소비자가 컬러 옵션을 명확하게 알 수 있도록 표현 ',
+    ],
+    images: [
+      '/images/mat/mat_00.jpg',
+      '/images/mat/mat_01.jpg',
+      '/images/mat/mat_02.jpg',
+      '/images/mat/mat_03.jpg',
+      '/images/mat/mat_04.jpg',
+      '/images/mat/mat_05.jpg',
+      '/images/mat/mat_06.jpg',
+      '/images/mat/mat_07.jpg',
+      '/images/mat/mat_08.jpg',
+    ]
+  },
+  {
+    class: 'design',
+    title: '흐음 애견샴푸 상세',
+    sub_title:'반려동물 용품 상세페이지 제작',
+    listImg: '/images/shampoo/shampoo_sum.png',
+    dec_list:[
+      '약사의 자문으로 제품을 생산하는‘흐음’이라는 업체의 모든 제품의 상세페이지를 외주로 받아 작업',
+      '기본 스펙, 제품 사진, 일러스트 이미지, 영상을 전달받음',
+      '일러스트 이미지와 gif를 최대한 많이 넣어달라는 특별 요청이 있었음',
+      '전달받은 영상들은 gif 변환 및 편집',
+      '리뷰 / 사용법 / 텍스쳐 설명 / 타사제품의 비교샷 부분에 gif 삽입하여소비자의 이해를 돕고자 했음',
+    ],
+    images: [
+      '/images/shampoo/shampoo_00.png',
+      '/images/shampoo/shampoo_01.webp',
+      '/images/shampoo/shampoo_02.webp',
+      '/images/shampoo/shampoo_03.webp',
+      '/images/shampoo/shampoo_04.png',
+      '/images/shampoo/shampoo_05.png',
+      '/images/shampoo/shampoo_06.webp',
+      '/images/shampoo/shampoo_07.png',
+      '/images/shampoo/shampoo_08.jpg',
+    ]
+  },
+  {
+    class: 'design',
+    title: '팜네이트 사과 상세 1안',
+    sub_title:'식품 상세페이지 제작',
+    listImg: '/images/apple1/apple_sum.jpg',
+    dec_list:[
+      '소규모 농수산업에 종사하고 있는농부들을 돕기 위해 설립된 사회적기업 ‘팜네이트’에서 근무하며 식품 상세페이지를 제작',
+      '기본 스펙만 전달받아 작업',
+      '해당 식품에 대해 공부하고, 삽입할 적절한 사진도 스스로 서칭하여 상세페이지 제작',
+      '청송 꿀땡이 사과 1안',
+    ],
+    images: [
+      '/images/apple1/apple_00.jpg',
+      '/images/apple1/apple_01.jpg',
+      '/images/apple1/apple_02.jpg',
+      '/images/apple1/apple_03.jpg',
+      '/images/apple1/apple_04.jpg',
+      '/images/apple1/apple_05.jpg',
+      '/images/apple1/apple_06.jpg',
+    ]
+  },
+  {
+    class: 'design',
+    title: '팜네이트 사과 상세 2안',
+    sub_title:'식품 상세페이지 제작',
+    listImg: '/images/apple2/apple2_sum.jpg',
+    dec_list:[
+      '소규모 농수산업에 종사하고 있는농부들을 돕기 위해 설립된 사회적기업 ‘팜네이트’에서 근무하며 식품 상세페이지를 제작',
+      '기본 스펙만 전달받아 작업',
+      '해당 식품에 대해 공부하고, 삽입할 적절한 사진도 스스로 서칭하여 상세페이지 제작',
+      '청송 꿀땡이 사과 2안',
+    ],
+    images: [
+      '/images/apple2/apple2_00.jpg',
+      '/images/apple2/apple2_01.jpg',
+      '/images/apple2/apple2_02.jpg',
+      '/images/apple2/apple2_03.jpg',
+      '/images/apple2/apple2_04.jpg',
+    ]
+  },
+  {
+    class: 'design',
+    title: '러브미모스트 수면잠옷 상세',
+    sub_title:'의류 상세페이지 제작',
+    listImg: '/images/pajama/pajama_sum.jpg',
+    dec_list:[
+      '속옷브랜드 ‘러브미모스트’에서 속옷&잠옷 상세페이지 제작',
+      '‘나를 가장 사랑하라’는 브랜드 컨셉에 맞게 ‘나 다움’을 강조하기는 인트로 요청 받음',
+      '제품 자체의 설명은 강조점 3가지로만 간결하게',
+      '설명 부분에는 사진을 적절히 활용하고, 강조점 아래로는 모든 촬영사진을 뿌려줌',
+    ],
+    images: [
+      '/images/pajama/pajama_00.jpg',
+      '/images/pajama/pajama_01.jpg',
+      '/images/pajama/pajama_02.jpg',
+      '/images/pajama/pajama_03.jpg',
+      '/images/pajama/pajama_04.jpg',
+      '/images/pajama/pajama_05.jpg',
+      '/images/pajama/pajama_06.jpg',
+    ]
+  },
+  {
+    class: 'design',
+    title: '러브미모스트 압박스타킹 상세',
+    sub_title:'의류 상세페이지 제작',
+    listImg: '/images/stocking/stocking_sum.jpg',
+    dec_list:[
+      '속옷브랜드 ‘러브미모스트’에서 속옷&잠옷 상세페이지 제작',
+      '‘나를 가장 사랑하라’는 브랜드 컨셉에 맞게 ‘나 다움’을 강조하기는 인트로 요청 받음',
+      '제품 자체의 설명은 강조점 3가지로만 간결하게',
+      '설명 부분에는 사진을 적절히 활용하고, 강조점 아래로는 모든 촬영사진을 뿌려줌',
+    ],
+    images: [
+      '/images/stocking/stocking_01.jpg',
+      '/images/stocking/stocking_02.jpg',
+      '/images/stocking/stocking_03.jpg',
+      '/images/stocking/stocking_04.jpg',
+      '/images/stocking/stocking_05.jpg',
+      '/images/stocking/stocking_06.jpg',
+    ]
+  },
+  {
+    class: 'video',
+    title: '송월 타올 영상 제작',
+    sub_title:'아이폰으로 직접 촬영 - 어도비 프리미어로 제작',
+    listImg: '/video/towel_sum.jpg',
+    dec_list:[
+      '상세페이지 상단에 추가할 타올 설명 영상 제작 요청 받음',
+      '30수 타올 설명을 위한 내용 기획',
+      '아이폰으로 직접 촬영하여 어도비 프리미어로 영상 편집 및 자막 삽입함',
+    ],
+    video: [
+      '/video/towel.mp4',
+    ]
+  },
+  {
+    class: 'design',
+    title: '송월 3초 가운 상세',
+    sub_title:'타올/가운 상세페이지 제작',
+    listImg: '/images/3sGown/3sGown_sum.jpg',
+    dec_list:[
+      '송월타올에서 자체 제작한 3초 가운의 상세페이지 제작',
+      '헤어밴드+헤어터번+가운 3종 세트로 색상별로 구분하여 설명',
+      '착용 방법이 다소 어렵기 때문에 사용자가 쉽게 이해할 수 있도록 설명',
+    ],
+    images: [
+      '/images/3sGown/3sGown_01.jpg',
+      '/images/3sGown/3sGown_02.jpg',
+      '/images/3sGown/3sGown_03.jpg',
+      '/images/3sGown/3sGown_04.jpg',
+      '/images/3sGown/3sGown_05.jpg',
+      '/images/3sGown/3sGown_06.jpg',
+      '/images/3sGown/3sGown_07.jpg',
+      '/images/3sGown/3sGown_08.jpg',
+      '/images/3sGown/3sGown_09.jpg',
+      '/images/3sGown/3sGown_10.jpg',
+      '/images/3sGown/3sGown_11.jpg',
+      '/images/3sGown/3sGown_12.jpg',
+      '/images/3sGown/3sGown_13.jpg',
+      '/images/3sGown/3sGown_14.jpg',
+      '/images/3sGown/3sGown_15.jpg',
     ]
   },
   {
@@ -135,20 +307,6 @@ const portfolioData = [
       '제작에 사용된 스킬 : JavaScript, DOM 조작, 이벤트 처리'
     ],
     link: 'https://mugglekim.github.io/dateCalc/index.html'
-  },
-  {
-    class: 'video',
-    title: '타올 영상 제작',
-    sub_title:'아이폰으로 직접 촬영하여 프리미어로 제작',
-    listImg: '/video/towel_sum.jpg',
-    dec_list:[
-      '상세페이지 상단에 추가할 타올 설명 영상 제작 요청 받음',
-      '30수 타올 설명을 위한 내용 기획',
-      '아이폰으로 직접 촬영하여 어도비 프리미어로 영상 편집 및 자막 삽입함',
-    ],
-    video: [
-      '/video/towel.mp4',
-    ]
   },
 ];
 

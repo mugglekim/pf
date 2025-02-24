@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { LuX } from "react-icons/lu";
 import { Link } from 'react-router-dom';
 
 
@@ -13,8 +12,10 @@ const WorkDetail = ({selectPf,onClose}) => {
 
   return (
     <div className='workDetail-wrap'>
+      {selectPf.link && <span className="coding-close" onClick={onClose}>닫기</span>}
+      {selectPf.images && <span className="design-close" onClick={onClose}>닫기</span>}
+      {selectPf.video && <span className="design-close" onClick={onClose}>닫기</span>}
       <span className="m-close" onClick={onClose}>닫기</span>
-      <span className="pc-close" onClick={onClose}><LuX /></span>
       {
         selectPf.link &&
         <div className='popup publishing'>

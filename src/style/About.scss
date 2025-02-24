@@ -95,6 +95,7 @@
       padding: 4rem;
       box-sizing: border-box;
       flex: 1;
+      border-radius: 0.4rem;
       @include responsive($breakpoint-small) {
         padding: 3rem 2rem;
       }

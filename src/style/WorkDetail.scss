@@ -1,25 +1,28 @@
 .workDetail-wrap{
   width: 100%; height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 0.8);
+  background-color: rgba($color: #000000, $alpha: 0.9);
   position: fixed;
   top:0; left: 0;
   z-index: 8;
-  .pc-close{
-    font-size: 3rem;
-    position: absolute;
+  .coding-close, .design-close{
+    font-size: $font-size-small;
+    text-decoration: underline;
+    position: fixed;
     color: $text-white;
-    top: 5%; right: 50%;
-    transform: translateX(650px);
     cursor: pointer;
-    z-index: 12;
-    @media screen and (max-width: 1440px){
-      right: 5%;
-      transform: none;
-    }
+    z-index: 14;
     @include responsive($breakpoint-medium){
       display: none;
     }
   }
+  .coding-close{
+    bottom: 50%; left: 50%;
+    transform: translate(-50%, 340px);
+  }
+  .design-close{
+    bottom: 5%; left: 50%;
+    transform: translateX(-50%);
+  } 
   .m-close{
     display: none;
     position: fixed;
@@ -36,8 +39,7 @@
     }
   }
   .popup{
-    width: 80%;
-    max-width: 1170px; min-width: 870px;
+    width: 1170px;
     height: 80%;
     box-sizing: border-box;
     background-color: #fff;
@@ -45,6 +47,9 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    @include responsive($breakpoint-large){
+      width: 870px;
+    }
     @include responsive($breakpoint-medium){
       width: 100%; height: 100vh;
       min-width: auto;
@@ -58,11 +63,12 @@
         }
       }
       ul{
-        margin: 2rem 0;
+        margin: 1.2rem 0;
         li{
           list-style: disc;
           margin: 0.5rem 1rem;
           font-size: $font-size-small;
+          color: $text-gray;
         }
       }
     }
@@ -112,7 +118,7 @@
         border: 2px solid $primary-color;
         color: $text-white;
         cursor: pointer;
-        border-radius: 2rem;
+        border-radius: 0.4rem;
         &:hover{
           background-color: transparent;
           color: $primary-color;

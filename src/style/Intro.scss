@@ -1,0 +1,46 @@
+.intro-wrap{
+  color: $text-white;
+  text-align: left;
+  width: 100%;
+  background-image: url(../../public/images/intro-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  position: relative;
+  @include responsive($breakpoint-large){
+    // background-size: auto;
+    background-position: 50% 50%;
+  }
+  .intro-txt{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    @include responsive($breakpoint-small){
+      top:50%;
+    }
+    h1{
+      font-size: $font-size-large;
+      @include responsive($breakpoint-small){
+        display: none;
+      }
+    }
+    .m-title{
+      display: none;
+      @include responsive($breakpoint-small){
+        display: block;
+        line-height:1;
+      }
+    }
+    p{
+      width: 360px;
+      font-size: $font-size-small;
+      @include responsive($breakpoint-small){
+        width: 80%;
+        margin-top: 2rem;
+      }
+    }
+    @include responsive($breakpoint-small){
+      padding: 0 2rem;
+    }
+  }
+}

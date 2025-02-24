@@ -1,0 +1,152 @@
+.workDetail-wrap{
+  width: 100%; height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  position: fixed;
+  top:0; left: 0;
+  z-index: 8;
+  .pc-close{
+    font-size: 3rem;
+    position: absolute;
+    color: $text-white;
+    top: 5%; right: 50%;
+    transform: translateX(650px);
+    cursor: pointer;
+    z-index: 12;
+    @media screen and (max-width: 1440px){
+      right: 5%;
+      transform: none;
+    }
+    @include responsive($breakpoint-medium){
+      display: none;
+    }
+  }
+  .m-close{
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0;
+    width: 100%; height: 4rem;
+    background-color: $text-black;
+    color: $text-white;
+    text-align: center;
+    line-height: 4rem;
+    z-index: 12;
+    cursor: pointer;
+    @include responsive($breakpoint-medium){
+      display: block;
+    }
+  }
+  .popup{
+    width: 80%;
+    max-width: 1170px; min-width: 870px;
+    height: 80%;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    @include responsive($breakpoint-medium){
+      width: 100%; height: 100vh;
+      min-width: auto;
+    }  
+    .pf-txt{
+      h4{
+        font-size: $font-size-medium;
+        font-weight: 800;
+        span{
+          color: $primary-color;
+        }
+      }
+      ul{
+        margin: 2rem 0;
+        li{
+          list-style: disc;
+          margin: 0.5rem 1rem;
+          font-size: $font-size-small;
+        }
+      }
+    }
+  }
+  .publishing{
+    max-height: 600px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-y: scroll;
+    @include responsive($breakpoint-medium){
+      max-height: none;
+      width: 100%; height: 100vh;
+      flex-direction: column;
+    }
+    img, .pf-txt{
+      width: 50%;
+      box-sizing: border-box;
+    }
+    img{
+      object-fit: cover;
+      @include responsive($breakpoint-medium){
+        width: 100%;
+        height: 240px;
+      }
+    }
+    .pf-txt{
+      padding: 4rem;
+      @include responsive($breakpoint-large){
+        padding: 4rem 3rem;
+      }
+      @include responsive($breakpoint-medium){
+        width: 100%;
+      }
+      @include responsive($breakpoint-small){
+        padding: 3rem 2rem;
+      }
+      p{
+        margin: 1rem 0;
+        font-weight: 600;
+      }
+      .pf-link{
+        text-align: center;
+        width: 160px;
+        padding: 0.8rem 1rem;
+        background-color: $primary-color;
+        border: 2px solid $primary-color;
+        color: $text-white;
+        cursor: pointer;
+        border-radius: 2rem;
+        &:hover{
+          background-color: transparent;
+          color: $primary-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .design{
+    overflow-y: scroll;
+    @include responsive($breakpoint-medium){
+      width: 100%; height: 100vh;
+    }
+    .pf-txt{
+      padding: 4rem 4rem 2rem;
+      box-sizing: border-box;
+    }
+    .pf-img{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        @include responsive($breakpoint-large){
+          width: 80%;
+        }
+        @include responsive($breakpoint-medium){
+          width: 100%;
+        }
+      }
+      video{
+        @include responsive($breakpoint-medium){
+          width: 100%;
+        }
+      }
+    }
+  }
+}

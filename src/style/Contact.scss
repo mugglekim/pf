@@ -1,0 +1,30 @@
+.contact-wrap{
+  width: 100%;
+  background-color: $primary-color;
+  color: $text-white;
+  ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include responsive($breakpoint-small){
+      flex-direction: column;
+      padding: 3rem 0;
+    }
+    li{
+      flex: 1;
+      text-align: center;
+      padding: 3rem 0;
+      @include responsive($breakpoint-small){
+        padding: 1rem 0;
+      }
+      span{
+        margin-right: 2rem;
+      }
+    }
+  }
+  p{
+    text-align: center;
+    padding: 3rem;
+  }
+}

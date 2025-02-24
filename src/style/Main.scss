@@ -1,0 +1,109 @@
+header{
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  top:0; left: 0;
+  z-index: 1;
+  &:hover{
+    background-color: $text-black;
+    a{
+      color: $text-white;
+    }
+  }
+}
+
+.pc-menu{
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  .nav-close{
+    display: none;
+  }
+  a{
+    padding: 1rem;
+    font-weight: 400;
+    color: $text-white;
+    &:nth-of-type(1){
+      font-weight: 600;
+      margin-right: auto;
+      font-size: $font-size-regular;
+    }
+    &:hover{
+      color: $primary-color;
+    }
+  }
+  @include responsive($breakpoint-large){
+    width: 870px;
+  }
+  @include responsive($breakpoint-medium){
+    width: 90%;
+  }
+  @include responsive($breakpoint-small){
+    display: none;
+  }
+}
+.m-gnb{
+  display: none;
+  @include responsive($breakpoint-small){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $text-white;
+    background-color: $text-black;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    a{
+      font-size: $font-size-regular;
+      font-weight: 600;
+    }
+    .menu-btn{
+      font-size: $font-size-medium;
+      cursor: pointer;
+      font-weight: 100;
+      position: fixed;
+      top: 1rem; right: 1rem;
+      z-index: 1;
+    }
+  }
+}
+
+.m-menu{
+  display: none;
+  position: fixed;
+  top:0; left: 0;
+  font-size: $font-size-regular;
+  @include responsive($breakpoint-small){
+    width: 70%; height: 100vh;
+    background-color: $primary-color;
+    color: $text-white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 4rem 2rem;
+    box-shadow: 7rem 0 2rem 2rem rgba($color: $text-black, $alpha: 0.7);
+    display: flex;
+    a:nth-of-type(1){
+      font-weight: 600;
+      margin-right: 0;
+      color: $text-white;
+    }
+  }
+}
+
+
+section{
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:0;
+  background-color: $text-white;
+  box-sizing: border-box;
+}

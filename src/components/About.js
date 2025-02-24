@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className='about-wrap'>
       <div className='about-basic'>
-        <img src={`${process.env.PUBLIC_URL}/images/aboutMe.webp`} alt='프로필사진'/>
+        <img src={`${process.env.PUBLIC_URL}/images/aboutMe.gif`} alt='프로필사진'/>
         <div className='about-txt'>
           <h2>
             안녕하세요!<br/>

@@ -28,13 +28,9 @@
         position: absolute;
         top: 0; left:0;
         width: 100%; height: 100%;
-        background-color: rgba($color: $text-black, $alpha: 0.8);
+        background-color: rgba($color: $text-black, $alpha: 0.5);
         &:hover{
-          background-color: rgba($color: $text-white, $alpha: 0.7);
-          .pf-txt{
-            color: $primary-color;
-            font-weight: 600;
-          }
+          background-color: rgba($color: $primary-color, $alpha: 0.8);
         }
         .pf-txt{
           width: 80%;

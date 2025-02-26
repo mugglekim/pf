@@ -183,7 +183,7 @@
     .experience {
       .ex-step {
         display: flex;
-        align-items: center; // 요소들이 같은 라인에 있도록 설정
+        align-items: flex-start; // 요소들이 같은 라인에 있도록 설정
         flex-wrap: nowrap; // 요소들이 줄 바꿈되지 않도록 설정
         gap: 10px; // 요소 간 간격 조정
     

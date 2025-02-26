@@ -17,6 +17,9 @@ const Works = () => {
   }
   return (
     <div className='pf-wrap'>
+      <h2>
+        WEB DESIGN<span>.</span>
+      </h2>
       <div className='pf-list'>
         {
           portfolioData.map((list,idx)=>{

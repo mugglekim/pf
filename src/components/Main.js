@@ -1,15 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Intro from './Intro';
 import About from './About';
-import Works from './Works';
+import Design from './Design';
 import Contact from './Contact';
+import Coding from './Coding';
 import { LuAlignJustify, LuX } from "react-icons/lu";
 
 const Main = () => {
   const [activeIdx, setActiveIdx]=useState(0);
   const [mMenu, setMMenu]=useState(false);
-  const sections=['SEONMI KIM','About','Works','Contact'];
-  const sectionRef=[useRef(null),useRef(null),useRef(null),useRef(null)];
+  const sections=['SEONMI KIM','About','Design','Coding','Contact'];
+  const sectionRef=[useRef(null),useRef(null),useRef(null),useRef(null),useRef(null)];
   const clickMenu=()=>{
     setMMenu(!mMenu);
   }
@@ -91,9 +92,12 @@ const Main = () => {
         <About/>
       </section>
       <section ref={sectionRef[2]}>
-        <Works/>
+        <Design/>
       </section>
       <section ref={sectionRef[3]}>
+        <Coding/>
+      </section>
+      <section ref={sectionRef[4]}>
         <Contact/>
       </section>
     </div>

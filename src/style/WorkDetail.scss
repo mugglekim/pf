@@ -1,16 +1,23 @@
 .workDetail-wrap{
   width: 100%; height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 0.9);
+  background-color: rgba($color: $text-black, $alpha: 0.9);
   position: fixed;
   top:0; left: 0;
   z-index: 8;
   .coding-close, .design-close{
+    width: 120px;
+    text-align: center;
     font-size: $font-size-small;
-    text-decoration: underline;
     position: fixed;
-    color: $text-white;
     cursor: pointer;
     z-index: 14;
+    background-color: $primary-color;
+    color: $text-white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    &:hover{
+      background-color: $text-black;
+    }
     @include responsive($breakpoint-medium){
       display: none;
     }
@@ -44,7 +51,7 @@
     box-sizing: border-box;
     background-color: #fff;
     position: relative;
-    top: 50%; left: 50%;
+    top: 47%; left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     @include responsive($breakpoint-large){

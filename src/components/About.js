@@ -77,7 +77,7 @@ const About = () => {
         </div>
       }
       <button className='about-more-btn' onClick={clickMoreView}>
-        {showAboutPlus ? <span>더보기 닫기 <LuChevronUp /></span>:<span>자기소개 더보기 <LuChevronDown /></span>}
+        {showAboutPlus ? <span>더보기 닫기 <LuChevronUp /></span>:<span>스킬 / 경력 더보기 <LuChevronDown /></span>}
       </button>
     </div>
   );

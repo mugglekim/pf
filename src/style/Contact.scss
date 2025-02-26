@@ -8,6 +8,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @include responsive($breakpoint-large){
+      width: 100%;
+    }
     @include responsive($breakpoint-small){
       flex-direction: column;
       padding: 3rem 0;

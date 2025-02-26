@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top, $sub-color 0%, $text-white 100%);
+  // background-image: linear-gradient(to top, $sub-color 0%, $text-white 100%);
+  background-color: $text-white;
   .about-basic{
     width: 870px;
     display: flex;
@@ -51,7 +52,7 @@
     }
   }
   .about-more-btn{
-    width: 180px; height: 3rem;
+    width: 200px; height: 3rem;
     margin-top: 2rem;
     border: none;
     cursor: pointer;
@@ -91,11 +92,11 @@
       flex-direction: column;
     }
     .skills, .experience{
-      background-color: $text-white;
+      background-color: #fff;
       padding: 4rem;
       box-sizing: border-box;
       flex: 1;
-      border-radius: 0.4rem;
+      border: 2px solid $text-gray;
       @include responsive($breakpoint-small) {
         padding: 3rem 2rem;
       }
@@ -144,12 +145,12 @@
           .circle{
             width: 10px; height: 10px;
             border-radius: 100%;
-            border: 2px solid $primary-color;
+            border: 2px solid $sub-color;
           }
           .line{
             width: 2px;
             flex: 1;
-            background-color: $primary-color;
+            background-color: $sub-color;
           }
         }
         .ex-txt{
@@ -167,7 +168,7 @@
         }
         &:first-child{
           .circle{
-            background-color: $primary-color;
+            background-color: $sub-color;
           }
         }
         &:last-child{

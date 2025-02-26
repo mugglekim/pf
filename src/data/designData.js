@@ -311,8 +311,8 @@ const designData = [
     ]
   },
   {
-    title: '동물병원 인쇄물 작업업',
-    sub_title:'왈츠샵동물병원 외주 작업',
+    title: '동물병원 인쇄물 작업',
+    sub_title:'서울시 영등포에 위치한 왈츠샵동물병원 외주 작업',
     listImg: '/images/print/print_sum.jpg',
     dec_list:[
       '서울시 영등포에 위치한 왈츠샵동물병원의 인쇄물 작업 진행',

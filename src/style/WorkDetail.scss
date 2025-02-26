@@ -141,6 +141,15 @@
     .pf-txt{
       padding: 4rem 4rem 2rem;
       box-sizing: border-box;
+      @include responsive($breakpoint-large){
+        padding: 4rem 3rem;
+      }
+      @include responsive($breakpoint-medium){
+        width: 100%;
+      }
+      @include responsive($breakpoint-small){
+        padding: 3rem 2rem;
+      }
     }
     .pf-img{
       display: flex;

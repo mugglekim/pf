@@ -133,6 +133,7 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
+        align-items: stretch;
         gap: 10px;
         .ex-date{
           width: 89px;

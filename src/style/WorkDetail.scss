@@ -134,9 +134,9 @@
   }
   .design{
     overflow-y: scroll;
+    padding-bottom: 4rem;
     @include responsive($breakpoint-medium){
       width: 100%; height: 100vh;
-      padding-bottom: 4rem;
     }
     .pf-txt{
       padding: 4rem 4rem 2rem;

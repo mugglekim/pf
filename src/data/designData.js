@@ -68,7 +68,6 @@ const designData = [
       '소비자가 컬러 옵션을 명확하게 알 수 있도록 표현 ',
     ],
     images: [
-      '/images/mat/mat_00.jpg',
       '/images/mat/mat_01.jpg',
       '/images/mat/mat_02.jpg',
       '/images/mat/mat_03.jpg',
@@ -245,12 +244,43 @@ const designData = [
     sub_title:'주기적으로 교체되는 쇼핑몰 롤링배너 제작',
     listImg: '/images/slideBanner/slideBanner_sum.jpg',
     dec_list:[
-      '각 기업의 자사몰과스마트 스토어에 등록할 롤링 배너 pc/mobile 제작'
+      '각 기업의 자사몰과스마트 스토어에 등록할 롤링 배너 pc/mobile 제작',
+      'pc 디자인과 mobile 디자인 각각 하나씩 제작 후, 등록이 필요한 사이트 가이드에 맞춰 일괄적으로 리사이징 작업'
     ],
     images: [
       '/images/slideBanner/slideBanner_01.jpg',
       '/images/slideBanner/slideBanner_02.jpg',
       '/images/slideBanner/slideBanner_03.jpg',
+    ]
+  },
+  {
+    title: '광고 배너 모음',
+    sub_title:'소비자의 클릭을 유도하는 광고고배너 제작',
+    listImg: '/images/adBanner/adBanner_sum.jpg',
+    dec_list:[
+      '마케팅팀의 요청에 따라 제작 진행',
+      '원활한 협업을 위해 카피문구 및 톤앤매너를 지키는 것이 중요'
+    ],
+    images: [
+      '/images/adBanner/adBanner_00.jpg',
+      '/images/adBanner/adBanner_01.jpg',
+      '/images/adBanner/adBanner_02.jpg',
+      '/images/adBanner/adBanner_03.jpg',
+      '/images/adBanner/adBanner_04.jpg',
+      '/images/adBanner/adBanner_05.jpg',
+      '/images/adBanner/adBanner_06.jpg',
+      '/images/adBanner/adBanner_07.jpg',
+      '/images/adBanner/adBanner_08.jpg',
+      '/images/adBanner/adBanner_09.jpg',
+      '/images/adBanner/adBanner_10.jpg',
+      '/images/adBanner/adBanner_11.jpg',
+      '/images/adBanner/adBanner_12.jpg',
+      '/images/adBanner/adBanner_13.jpg',
+      '/images/adBanner/adBanner_14.jpg',
+      '/images/adBanner/adBanner_15.jpg',
+      '/images/adBanner/adBanner_16.jpg',
+      '/images/adBanner/adBanner_17.jpg',
+      '/images/adBanner/adBanner_18.jpg',
     ]
   },
 ];

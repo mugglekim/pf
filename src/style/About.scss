@@ -205,8 +205,32 @@
           
           .line {
             width: 2px;
-            flex: 1;
+            flex-grow: 1;
             background-color: $sub-color;
+          }
+        }
+        .ex-txt{
+          // margin-left: 1rem;
+          margin-bottom: 1rem;
+          width: 100%;
+          span:first-child{
+            font-size: $font-size-small;
+            font-weight: 600;
+            color: $text-black;
+          }
+          span{
+            color: $text-gray;
+            font-size: 14px;
+          }
+        }
+        &:first-child{
+          .circle{
+            background-color: $sub-color;
+          }
+        }
+        &:last-child{
+          .line{
+            display: none;
           }
         }
       }

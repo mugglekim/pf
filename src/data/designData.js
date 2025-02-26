@@ -1,7 +1,7 @@
 // 퍼블리싱 리스트이미지 사이즈 900*600 권장
 //나머지 리스트이미지 사이즈 700*360 권장
 
-const portfolioData = [
+const designData = [
   {
     class: 'design',
     title: '베드진 매트리스 상세',
@@ -231,4 +231,4 @@ const portfolioData = [
   },
 ];
 
-export default portfolioData;
+export default designData;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import portfolioData from '../data/portfolioData';
+import designData from '../data/designData';
 import WorkDetail from './WorkDetail';
 
 const Works = () => {
@@ -22,7 +22,7 @@ const Works = () => {
       </h2>
       <div className='pf-list'>
         {
-          portfolioData.map((list,idx)=>{
+          designData.map((list,idx)=>{
             return (
               <div key={idx} className='pf-box' onClick={()=>{handleClick(list)}}>              
                 <img src={`${process.env.PUBLIC_URL+list.listImg}`} alt={list.title}/>

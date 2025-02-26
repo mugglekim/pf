@@ -128,84 +128,29 @@
         }
       }
     }
-    // .experience{
-    //   .ex-step{
-    //     display: flex;
-    //     .ex-date{
-    //       // margin-right: 1rem;
-    //       width: 89px;
-    //     }
-    //     .ex-deco{
-    //       width: 14px;
-    //       display: flex;
-    //       flex-direction: column;
-    //       align-items: center;
-    //       box-sizing: border-box;
-    //       position: relative;
-    //       top: 6px;
-    //       padding: 0 1rem;
-    //       .circle{
-    //         width: 10px; height: 10px;
-    //         border-radius: 100%;
-    //         border: 2px solid $sub-color;
-    //       }
-    //       .line{
-    //         width: 2px; height: 100%;
-    //         background-color: $sub-color;
-    //       }
-    //     }
-    //     .ex-txt{
-    //       // margin-left: 1rem;
-    //       margin-bottom: 1rem;
-    //       width: 100%;
-    //       span:first-child{
-    //         font-size: $font-size-small;
-    //         font-weight: 600;
-    //         color: $text-black;
-    //       }
-    //       span{
-    //         color: $text-gray;
-    //         font-size: 14px;
-    //       }
-    //     }
-    //     &:first-child{
-    //       .circle{
-    //         background-color: $sub-color;
-    //       }
-    //     }
-    //     &:last-child{
-    //       .line{
-    //         display: none;
-    //       }
-    //     }
-    //   }
-    // }
-    .experience {
-      .ex-step {
+    .experience{
+      .ex-step{
         display: flex;
-        align-items: flex-start; // 요소들이 같은 라인에 있도록 설정
-        flex-wrap: nowrap; // 요소들이 줄 바꿈되지 않도록 설정
-        gap: 10px; // 요소 간 간격 조정
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 10px;
         .ex-date{
           width: 89px;
         }
-        .ex-deco {
-          width: 10px;
+        .ex-deco{
+          width: 14px;
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: center; // 가운데 정렬 보장
           position: relative;
-          top: 6px; // 위치 조정
-          .circle {
-            width: 10px;
-            height: 10px;
+          top: 6px;
+          .circle{
+            width: 10px; height: 10px;
             border-radius: 100%;
             border: 2px solid $sub-color;
           }
-          .line {
-            width: 2px;
-            flex-grow: 1;
+          .line{
+            width: 2px; height: 100%;
             background-color: $sub-color;
           }
         }
@@ -234,6 +179,5 @@
         }
       }
     }
-    
   }
 }

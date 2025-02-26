@@ -15,10 +15,6 @@
     position: absolute;
     top:50%; left:50%;
     transform: translate(-50%, -50%);
-    @include responsive($breakpoint-small){
-      padding: 0 2rem;
-      width: 360px;
-    }
     h1{
       font-size: $font-size-large;
       @include responsive($breakpoint-small){
@@ -30,16 +26,19 @@
       @include responsive($breakpoint-small){
         display: block;
         line-height:1;
-        width: 100%;
       }
     }
     p{
-      width: 100%;
+      width: 360px;
       font-size: $font-size-small;
       @include responsive($breakpoint-small){
         width: 80%;
         margin-top: 2rem;
       }
+    }
+    @include responsive($breakpoint-small){
+      padding: 0 2rem;
+      width: 80%;
     }
   }
 }

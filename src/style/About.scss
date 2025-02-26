@@ -194,7 +194,7 @@
           align-items: center;
           justify-content: center; // 가운데 정렬 보장
           position: relative;
-          top: 0; // 위치 조정
+          top: 6px; // 위치 조정
     
           .circle {
             width: 10px;
@@ -205,7 +205,7 @@
           
           .line {
             width: 2px;
-            height: 100%;
+            flex: 1;
             background-color: $sub-color;
           }
         }

@@ -34,6 +34,7 @@ header{
     }
     &:hover{
       color: $primary-color;
+      font-weight: 400;
     }
   }
   @include responsive($breakpoint-large){

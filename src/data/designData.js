@@ -3,7 +3,6 @@
 
 const designData = [
   {
-    class: 'design',
     title: '베드진 매트리스 상세',
     sub_title:'가구/인테리어 상세페이지 제작 - 전체 리뉴얼',
     listImg: '/images/bedjean/bedjean_sum.jpg',
@@ -33,7 +32,6 @@ const designData = [
     ]
   },
   {
-    class: 'design',
     title: '오가닉 메모리폼 토퍼 상세',
     sub_title:'가구/인테리어 상세페이지 제작 - 전체 리뉴얼',
     listImg: '/images/topper/topper_sum.jpg',
@@ -60,7 +58,6 @@ const designData = [
     ]
   },
   {
-    class: 'design',
     title: '마리포사 테이블매트 상세',
     sub_title:'생활용품 상세페이지 제작 - 아이폰으로 직접 촬영',
     listImg: '/images/mat/mat_sum.jpg',
@@ -83,7 +80,6 @@ const designData = [
     ]
   },
   {
-    class: 'design',
     title: '흐음 애견샴푸 상세',
     sub_title:'반려동물 용품 상세페이지 제작',
     listImg: '/images/shampoo/shampoo_sum.png',
@@ -107,7 +103,6 @@ const designData = [
     ]
   },
   {
-    class: 'design',
     title: '팜네이트 사과 상세 1안',
     sub_title:'식품 상세페이지 제작',
     listImg: '/images/apple1/apple_sum.jpg',
@@ -128,7 +123,6 @@ const designData = [
     ]
   },
   {
-    class: 'design',
     title: '팜네이트 사과 상세 2안',
     sub_title:'식품 상세페이지 제작',
     listImg: '/images/apple2/apple2_sum.jpg',
@@ -147,7 +141,6 @@ const designData = [
     ]
   },
   {
-    class: 'design',
     title: '러브미모스트 수면잠옷 상세',
     sub_title:'의류 상세페이지 제작',
     listImg: '/images/pajama/pajama_sum.jpg',
@@ -168,7 +161,6 @@ const designData = [
     ]
   },
   {
-    class: 'design',
     title: '러브미모스트 압박스타킹 상세',
     sub_title:'의류 상세페이지 제작',
     listImg: '/images/stocking/stocking_sum.jpg',
@@ -188,7 +180,6 @@ const designData = [
     ]
   },
   {
-    class: 'video',
     title: '송월 타올 영상 제작',
     sub_title:'아이폰으로 직접 촬영 - 어도비 프리미어로 제작',
     listImg: '/video/towel_sum.jpg',
@@ -202,7 +193,6 @@ const designData = [
     ]
   },
   {
-    class: 'design',
     title: '송월 3초 가운 상세',
     sub_title:'타올/가운 상세페이지 제작',
     listImg: '/images/3sGown/3sGown_sum.jpg',
@@ -227,6 +217,42 @@ const designData = [
       '/images/3sGown/3sGown_13.jpg',
       '/images/3sGown/3sGown_14.jpg',
       '/images/3sGown/3sGown_15.jpg',
+    ]
+  },
+  {
+    title: '블랙마카와 토마토의 힘 상세',
+    sub_title:'식품 상세페이지 제작',
+    listImg: '/images/tomato/tomato_sum.jpg',
+    dec_list:[
+      '개인적으로 맛있게 먹은 음료의 상세페이지 제작',
+      '생소한 재료인 블랙마카 설명을 포함하여 제품의 특징을 3가지로 정리해서 설명',
+      '놓치기 아쉬운 구성임을 알려주면서 구매욕구 올리기',
+    ],
+    images: [
+      '/images/tomato/tomato_01.jpg',
+      '/images/tomato/tomato_02.jpg',
+      '/images/tomato/tomato_03.jpg',
+      '/images/tomato/tomato_04.jpg',
+      '/images/tomato/tomato_05.jpg',
+      '/images/tomato/tomato_06.jpg',
+      '/images/tomato/tomato_07.jpg',
+      '/images/tomato/tomato_08.jpg',
+      '/images/tomato/tomato_09.jpg',
+    ]
+  },
+  {
+    title: '슬라이드 배너 모음',
+    sub_title:'주기적으로 교체되는 쇼핑몰 롤링배너 제작',
+    listImg: '/images/slideBanner/slideBanner_sum.jpg',
+    dec_list:[
+      '개인적으로 맛있게 먹은 음료의 상세페이지 제작',
+      '생소한 재료인 블랙마카 설명을 포함하여 제품의 특징을 3가지로 정리해서 설명',
+      '놓치기 아쉬운 구성임을 알려주면서 구매욕구 올리기',
+    ],
+    images: [
+      '/images/slideBanner/slideBanner_01.jpg',
+      '/images/slideBanner/slideBanner_02.jpg',
+      '/images/slideBanner/slideBanner_03.jpg',
     ]
   },
 ];

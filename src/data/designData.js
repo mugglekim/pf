@@ -145,9 +145,9 @@ const designData = [
     listImg: '/images/pajama/pajama_sum.jpg',
     dec_list:[
       '속옷브랜드 ‘러브미모스트’에서 속옷&잠옷 상세페이지 제작',
-      '‘나를 가장 사랑하라’는 브랜드 컨셉에 맞게 ‘나 다움’을 강조하기는 인트로 요청 받음',
+      '‘나를 가장 사랑하라’는 브랜드 컨셉에 맞게 ‘나 다움’을 강조하는 인트로 요청 받음',
       '제품 자체의 설명은 강조점 3가지로만 간결하게',
-      '설명 부분에는 사진을 적절히 활용하고, 강조점 아래로는 모든 촬영사진을 뿌려줌',
+      '설명 부분에는 사진을 적절히 활용하고, 강조점 아래로는 모든 촬영사진을 뿌려줌(강조점 아래 촬영사진만 나오는 부분은 생략했습니다.)',
     ],
     images: [
       '/images/pajama/pajama_00.jpg',
@@ -165,9 +165,9 @@ const designData = [
     listImg: '/images/stocking/stocking_sum.jpg',
     dec_list:[
       '속옷브랜드 ‘러브미모스트’에서 속옷&잠옷 상세페이지 제작',
-      '‘나를 가장 사랑하라’는 브랜드 컨셉에 맞게 ‘나 다움’을 강조하기는 인트로 요청 받음',
+      '하체압박의 필요성과 추천대상 인트로 요청 받음',
       '제품 자체의 설명은 강조점 3가지로만 간결하게',
-      '설명 부분에는 사진을 적절히 활용하고, 강조점 아래로는 모든 촬영사진을 뿌려줌',
+      '설명 부분에는 사진을 적절히 활용하고, 강조점 아래로는 모든 촬영사진을 뿌려줌(강조점 아래 촬영사진만 나오는 부분은 생략했습니다.)',
     ],
     images: [
       '/images/stocking/stocking_01.jpg',
@@ -223,8 +223,8 @@ const designData = [
     sub_title:'식품 상세페이지 제작',
     listImg: '/images/tomato/tomato_sum.jpg',
     dec_list:[
-      '개인적으로 맛있게 먹은 음료의 상세페이지 제작',
-      '생소한 재료인 블랙마카 설명을 포함하여 제품의 특징을 3가지로 정리해서 설명',
+      '매일야채의 프리미엄라인 음료 상세페이지 제작',
+      '생소한 재료인 블랙마카 설명을 포함하여 제품의 특징을 3가지로 정리',
       '놓치기 아쉬운 구성임을 알려주면서 구매욕구 올리기',
     ],
     images: [
@@ -255,7 +255,7 @@ const designData = [
   },
   {
     title: '광고 배너 모음',
-    sub_title:'소비자의 클릭을 유도하는 광고고배너 제작',
+    sub_title:'소비자의 클릭을 유도하는 광고배너 제작',
     listImg: '/images/adBanner/adBanner_sum.jpg',
     dec_list:[
       '마케팅팀의 요청에 따라 제작 진행',
@@ -281,6 +281,59 @@ const designData = [
       '/images/adBanner/adBanner_16.jpg',
       '/images/adBanner/adBanner_17.jpg',
       '/images/adBanner/adBanner_18.jpg',
+    ]
+  },
+  {
+    title: 'SNS 배너 모음',
+    sub_title:'브랜드 인지도를 높이기 위한 다양한 컨텐츠 제작',
+    listImg: '/images/sns/sns_sum.jpg',
+    dec_list:[
+      'sns를 활용하여 브랜드 인지도와 긍정적 이미지, 소비자 유입을 높이기 위한 컨텐츠 제작',
+      '정보 전달용 카드뷰',
+      '이벤트 내용을 고지하는 인스타피드, 스토리 이미지 작업'
+    ],
+    images: [
+      '/images/sns/sns_01.png',
+      '/images/sns/sns_02.png',
+      '/images/sns/sns_03.png',
+      '/images/sns/sns_04.png',
+      '/images/sns/sns_05.png',
+      '/images/sns/sns_06.png',
+      '/images/sns/sns_07.png',
+
+      '/images/sns/sns_11.jpg',
+      '/images/sns/sns_12.jpg',
+      '/images/sns/sns_13.jpg',
+      '/images/sns/sns_14.jpg',
+      '/images/sns/sns_15.jpg',
+      '/images/sns/sns_16.jpg',
+      '/images/sns/sns_17.jpg',
+    ]
+  },
+  {
+    title: '동물병원 인쇄물 작업업',
+    sub_title:'왈츠샵동물병원 외주 작업',
+    listImg: '/images/print/print_sum.jpg',
+    dec_list:[
+      '서울시 영등포에 위치한 왈츠샵동물병원의 인쇄물 작업 진행',
+      '동물병원 로고 / 스티커 작업 / 명함 / 현수막 / 포스터 / 약봉투 / 약포지 / 스탠딩 배너',
+    ],
+    images: [
+      '/images/print/print_01.jpg',
+      '/images/print/print_02.jpg',
+      '/images/print/print_03.jpg',
+      '/images/print/print_04.jpg',
+      '/images/print/print_05.jpg',
+      '/images/print/print_06.jpg',
+      '/images/print/print_07.jpg',
+      '/images/print/print_08.jpg',
+      '/images/print/print_09.jpg',
+      '/images/print/print_10.jpg',
+      '/images/print/print_11.jpg',
+      '/images/print/print_12.jpg',
+      '/images/print/print_13.jpg',
+      '/images/print/print_14.jpg',
+      '/images/print/print_15.jpg',
     ]
   },
 ];

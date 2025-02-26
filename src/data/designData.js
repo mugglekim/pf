@@ -245,9 +245,7 @@ const designData = [
     sub_title:'주기적으로 교체되는 쇼핑몰 롤링배너 제작',
     listImg: '/images/slideBanner/slideBanner_sum.jpg',
     dec_list:[
-      '개인적으로 맛있게 먹은 음료의 상세페이지 제작',
-      '생소한 재료인 블랙마카 설명을 포함하여 제품의 특징을 3가지로 정리해서 설명',
-      '놓치기 아쉬운 구성임을 알려주면서 구매욕구 올리기',
+      '각 기업의 자사몰과스마트 스토어에 등록할 롤링 배너 pc/mobile 제작'
     ],
     images: [
       '/images/slideBanner/slideBanner_01.jpg',

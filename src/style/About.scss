@@ -132,7 +132,7 @@
       .ex-step{
         display: flex;
         .ex-date{
-          margin-right: 1rem;
+          // margin-right: 1rem;
           width: 89px;
         }
         .ex-deco{
@@ -143,6 +143,7 @@
           box-sizing: border-box;
           position: relative;
           top: 6px;
+          padding: 0 1rem;
           .circle{
             width: 10px; height: 10px;
             border-radius: 100%;
@@ -154,7 +155,7 @@
           }
         }
         .ex-txt{
-          margin-left: 1rem;
+          // margin-left: 1rem;
           margin-bottom: 1rem;
           span:first-child{
             font-size: $font-size-small;

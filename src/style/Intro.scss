@@ -12,11 +12,17 @@
     background-position: 50% 50%;
   }
   .intro-txt{
+    width: 520px;
     position: absolute;
     top:50%; left:50%;
     transform: translate(-50%, -50%);
+    @include responsive($breakpoint-small){
+      padding: 0 2rem;
+      width: 80%;
+    }
     h1{
       font-size: $font-size-large;
+      line-height:1;
       @include responsive($breakpoint-small){
         display: none;
       }
@@ -29,16 +35,15 @@
       }
     }
     p{
-      width: 360px;
+      width: 460px;
       font-size: $font-size-small;
+      margin: 2rem auto 0;
+      text-align: center;
       @include responsive($breakpoint-small){
         width: 80%;
-        margin-top: 2rem;
+        margin: 2rem 0 0;
+        text-align: left;
       }
-    }
-    @include responsive($breakpoint-small){
-      padding: 0 2rem;
-      width: 80%;
     }
   }
 }

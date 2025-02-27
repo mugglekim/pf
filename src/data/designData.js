@@ -332,10 +332,7 @@ const designData = [
       '/images/print/print_09.jpg',
       '/images/print/print_10.jpg',
       '/images/print/print_11.jpg',
-      '/images/print/print_12.jpg',
-      '/images/print/print_13.jpg',
-      '/images/print/print_14.jpg',
-      '/images/print/print_15.jpg',
+      '/images/print/print_12.png',
     ]
   },
 ];

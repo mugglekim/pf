@@ -32,6 +32,27 @@ const designData = [
     ]
   },
   {
+    title: '베드진 매트리스 프로모션',
+    sub_title:'상세페이지 옵션별 링크로 이동되는 프로모션 제작',
+    listImg: '/images/promotion1/promotion_bedjean_sum.jpg',
+    dec_list:[
+      '간략한 업체 소개-배드진 장점 5가지-베드진 옵션별 이동 링크 배너순으로 제작',
+      '직접 제작했던 상세페이지의 내용에 담았던 정보를 더 요약하여 제작함',
+    ],
+    images: [
+      '/images/promotion1/promotion_bedjean_01.webp',
+      '/images/promotion1/promotion_bedjean_02.webp',
+      '/images/promotion1/promotion_bedjean_03.webp',
+      '/images/promotion1/promotion_bedjean_04.jpg',
+      '/images/promotion1/promotion_bedjean_05.jpg',
+      '/images/promotion1/promotion_bedjean_06.jpg',
+      '/images/promotion1/promotion_bedjean_07.jpg',
+      '/images/promotion1/promotion_bedjean_08.jpg',
+      '/images/promotion1/promotion_bedjean_09.jpg',
+      '/images/promotion1/promotion_bedjean_10.jpg',
+    ]
+  },
+  {
     title: '오가닉 메모리폼 토퍼 상세',
     sub_title:'가구/인테리어 상세페이지 제작 - 전체 리뉴얼',
     listImg: '/images/topper/topper_sum.jpg',
@@ -55,6 +76,24 @@ const designData = [
       '/images/topper/topper_08.jpg',
       '/images/topper/topper_09.jpg',
       '/images/topper/topper_10.jpg',
+    ]
+  },
+  {
+    title: '한샘 수납/정리용품 프로모션',
+    sub_title:'상세페이지 옵션별 링크로 이동되는 프로모션 제작',
+    listImg: '/images/promotion2/promotion_hanssem_sum.jpg',
+    dec_list:[
+      '옷 정리 꿀팁과 함께 추천 용품을 제안',
+      '제품을 사용한 정리 예시 사진과 함께 추천 이유, 링크 제공',
+    ],
+    images: [
+      '/images/promotion2/promotion_hanssem_01.jpg',
+      '/images/promotion2/promotion_hanssem_02.jpg',
+      '/images/promotion2/promotion_hanssem_03.jpg',
+      '/images/promotion2/promotion_hanssem_04.jpg',
+      '/images/promotion2/promotion_hanssem_05.jpg',
+      '/images/promotion2/promotion_hanssem_06.jpg',
+      '/images/promotion2/promotion_hanssem_07.jpg',
     ]
   },
   {

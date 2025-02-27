@@ -300,7 +300,9 @@ const designData = [
       '/images/sns/sns_05.png',
       '/images/sns/sns_06.png',
       '/images/sns/sns_07.png',
-
+      '/images/sns/sns_08.jpg',
+      '/images/sns/sns_09.jpg',
+      '/images/sns/sns_10.jpg',
       '/images/sns/sns_11.jpg',
       '/images/sns/sns_12.jpg',
       '/images/sns/sns_13.jpg',

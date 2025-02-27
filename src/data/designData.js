@@ -310,7 +310,7 @@ const designData = [
       '/images/adBanner/adBanner_06.jpg',
       '/images/adBanner/adBanner_07.jpg',
       '/images/adBanner/adBanner_08.jpg',
-      '/images/adBanner/adBanner_09.jpg',
+      '/images/adBanner/adBanner_09.png',
       '/images/adBanner/adBanner_10.jpg',
       '/images/adBanner/adBanner_11.jpg',
       '/images/adBanner/adBanner_12.jpg',

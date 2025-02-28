@@ -13,7 +13,7 @@ const About = () => {
   
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 100) {
         gsap.to(aboutTxtRef.current, { opacity: 1, duration: 2 });
       }
     };

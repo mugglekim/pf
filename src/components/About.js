@@ -1,19 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import experienceData from '../data/experienceData';
 
 const About = () => {
   const [showAboutPlus, setShowAboutPlus]=useState(false);
+  const aboutTxtRef = useRef(null);
+
   const clickMoreView=()=>{
     setShowAboutPlus(!showAboutPlus);
   }
   
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        gsap.to(aboutTxtRef.current, { opacity: 1, duration: 2 });
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className='about-wrap'>
-      <div className='about-basic'>
-        <img src={`${process.env.PUBLIC_URL}/images/aboutMe.gif`} alt='프로필사진'/>
-        <div className='about-txt'>
-          <h2>
+      <div className="about-basic">
+      <img src={`${process.env.PUBLIC_URL}/images/aboutMe.gif`} alt="프로필사진" />
+      <div className="about-txt" ref={aboutTxtRef}>
+        <h2>
             안녕하세요!<br/>
             <span>웹디자이너 김선미</span>입니다.
           </h2>

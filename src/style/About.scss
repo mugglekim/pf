@@ -36,6 +36,7 @@
     }
     .about-txt{
       flex: 1;
+      opacity: 0;
       h2{
         font-size: $font-size-medium;
         margin-bottom: 1rem;

@@ -3,11 +3,17 @@ import React from 'react';
 const Contact = () => {
   return (
     <div className='contact-wrap'>
-      <ul>
-        <li><span>E - M A I L</span>shalomseonmi@gmail.com</li>
-        <li><span>T E L</span>+82 10 3354 6632</li>
+      <ul className='contact-txt'>
+        <li>
+          <p>E - M A I L</p>
+          <p>shalomseonmi@gmail.com</p>
+        </li>
+        <li>
+          <p>T E L</p>
+          <p>010 3354 6632</p>
+        </li>
       </ul>
-      <p>COPYRIGHT SEONMI KIM 2025. ALL RIGHTS RESERVED.</p>
+      <p className='copyright'>COPYRIGHT SEONMI KIM 2025. ALL RIGHTS RESERVED.</p>
     </div>
   );
 };

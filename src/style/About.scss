@@ -55,7 +55,7 @@
   }
   .about-more-btn{
     width: 200px; height: 3rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     border: none;
     cursor: pointer;
     background-color: $text-black;
@@ -72,7 +72,6 @@
   }
   .about-plus{
     gap: 2rem;
-    margin-top: 6rem;
     width: 1170px;
     display: flex;
     flex-direction: row;
@@ -85,7 +84,6 @@
       width: 80%;
       align-items: center;
       flex-direction: column;
-      margin-top: 4rem;
       .skills, .experience{
         width: 100%;
       }
@@ -95,6 +93,7 @@
     }
     .skills, .experience{
       background-color: #fff;
+      margin-top: 4rem;
       padding: 4rem;
       box-sizing: border-box;
       flex: 1;
@@ -132,6 +131,9 @@
       }
     }
     .experience{
+      @include responsive($breakpoint-medium){
+        margin-top: 0;
+      }
       .ex-step{
         display: flex;
         flex-wrap: nowrap;

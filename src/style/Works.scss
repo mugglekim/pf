@@ -30,6 +30,9 @@
       height: 360px;
       position: relative;
       cursor: pointer;
+      @include responsive($breakpoint-small){
+        height: 260px;
+      }
       img{
         position: absolute;
         top: 0; right:0;

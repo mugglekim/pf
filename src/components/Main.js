@@ -9,6 +9,7 @@ import { LuAlignJustify, LuX } from "react-icons/lu";
 const Main = () => {
   const [activeIdx, setActiveIdx]=useState(0);
   const [mMenu, setMMenu]=useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); 
   const sections=['SEONMI KIM','About','Design','Coding','Contact'];
   const sectionRef=[useRef(null),useRef(null),useRef(null),useRef(null),useRef(null)];
   const clickMenu=()=>{
@@ -28,6 +29,14 @@ const Main = () => {
     window.scrollTo({top:0});//새로고침하면 top:0으로 돌아가기
     const handleScroll=()=>{
       const {scrollTop, clientHeight, scrollHeight}=document.documentElement;
+
+      // 스크롤 값이 50 이상이면 배경색 변경
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+
       sectionRef.forEach((ref,idx)=>{
         const rect=ref.current.getBoundingClientRect();
         const yPos=clientHeight*0.5;
@@ -50,7 +59,8 @@ const Main = () => {
 
   return (
     <div className='main'>
-      <header>
+      {/* <header> */}
+      <header className={isScrolled ? 'scrolled' : ''}>
         <div className='m-gnb'>
           <a href='#'>SEONMI</a>
           <span className='menu-btn' onClick={clickMenu}>{mMenu ? <LuX /> : <LuAlignJustify />}</span>

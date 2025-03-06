@@ -4,12 +4,16 @@ header{
   position: fixed;
   top:0; left: 0;
   z-index: 1;
+  transition: background-color 0.3s ease;
   &:hover{
     background-color: $text-black;
     a{
       color: $text-white;
     }
   }
+}
+header.scrolled {
+  background-color: $text-black;
 }
 
 .pc-menu{
@@ -37,6 +41,9 @@ header{
       font-weight: 400;
     }
   }
+  // a.active{
+  //   color: $primary-color;
+  // }
   @include responsive($breakpoint-large){
     width: 870px;
   }
@@ -47,6 +54,7 @@ header{
     display: none;
   }
 }
+
 .m-gnb{
   display: none;
   @include responsive($breakpoint-small){

@@ -47,7 +47,7 @@ const CodingData=[
     dec_list:[
       '차트 라이브러리 : Chart.js를 사용하여 출결 현황 시각화',
       '제작에 사용된 스킬 : Vue 3(Composition API, ref, watch), Chart.js',
-      '일자별 출결 현황 셀렉박스에서 25년 2월 중에 선택해 주세요.'
+      '일자별 출결 현황 셀렉박스에서 25년 3월 중에 선택해 주세요.'
     ],
     link: 'https://mugglekim.github.io/chart/'
   },
